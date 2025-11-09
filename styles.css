@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@500;700&display=swap');
+:root{
+  --green:#5FAF3C;
+  --beige:#E9E5D8;
+  --offwhite:#FAF9F0;
+  --dark:#333333;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+body{font-family:'Lato',system-ui,Arial; margin:0;color:var(--dark);background:var(--offwhite);-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:24px;}
+.header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:48px}
+.nav a{margin-left:18px;font-weight:600;color:var(--dark);opacity:0.9}
+.hero{display:grid;grid-template-columns:1fr 420px;gap:40px;align-items:center;margin-top:28px;padding:28px;border-radius:16px;background:linear-gradient(180deg, rgba(250,249,240,1), rgba(233,229,216,0.7));}
+.hero h1{font-family:'Poppins',sans-serif;font-size:38px;margin:0 0 12px;color:var(--dark)}
+.hero p{margin:0 0 18px;line-height:1.5;color:#555}
+.cta{display:flex;gap:12px}
+.btn{background:var(--green);color:white;padding:12px 18px;border-radius:10px;font-weight:700}
+.btn.secondary{background:transparent;border:2px solid rgba(51,51,51,0.08);color:var(--dark)}
+
+.hero .hero-right{border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.06);}
+.hero .hero-right img{width:100%;display:block;}
+
+.section{padding:48px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+
+.card{background:white;border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(0,0,0,0.04);display:flex;flex-direction:column;height:100%}
+.card img{width:100%;height:190px;object-fit:cover;border-radius:8px}
+.card h3{margin:12px 0 6px;font-size:18px;font-weight:700}
+.card p{margin:0 0 12px;color:#666;flex:1}
+.card .price{font-weight:700;margin-bottom:8px}
+.card .buy{display:flex;gap:8px}
+
+.footer{background:var(--beige);padding:28px;border-radius:12px;margin-top:36px;text-align:center}
+.footer small{color:#555}
+
+.contact-form{display:grid;gap:10px;max-width:480px}
+
+@media (max-width:880px){
+  .hero{grid-template-columns:1fr; padding:18px}
+  .brand img{height:40px}
+  .hero h1{font-size:28px}
+}
